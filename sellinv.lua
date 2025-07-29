@@ -8,7 +8,7 @@ local SELL_DIALOGUE = "I want to sell my inventory"
 local Players = game:GetService("Players")
 local player = Players.LocalPlayer
 local replicatedStorage = game:GetService("ReplicatedStorage")
-local sellRemote = replicatedStorage:FindFirstChild("Sell_Inventory") or replicatedStorage:FindFirstChild("Sell") -- change if your game's remote name is different
+local sellRemote = replicatedStorage:FindFirstChild("Sell_Inventory") -- change if your game's remote name is different
 
 -- UI text location (you may need to adjust based on the game structure)
 local messageLabel = player:WaitForChild("PlayerGui"):WaitForChild("MainUI"):WaitForChild("BackpackStatus"):WaitForChild("TextLabel")
